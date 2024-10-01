@@ -2,17 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #e3eaef;
-  --foreground: #171717;
-  
-  --blue-900: #17192D;
-  --blue-500: #023B78;
-  --blue-200: #2188FF;
-
-  --gray-950: #24292F;
-}
-
 body {
   color: var(--foreground);
   background: var(--background);

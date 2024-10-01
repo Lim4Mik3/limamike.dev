@@ -46,8 +46,6 @@ export class TreeBuilder {
     this.processLocations();
     this.processAssets();
 
-    console.log(JSON.stringify(this.rootNodes, null, 2))
-
     return this.rootNodes;
   }
 

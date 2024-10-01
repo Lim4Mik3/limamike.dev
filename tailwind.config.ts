@@ -9,12 +9,12 @@ const config: Config = {
   theme: {
     extend: { 
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-        'blue-900': "var(--blue-900)",
-        'blue-500': "var(--blue-500)",
-        'blue-200': "var(--blue-200)",
-        'gray-950': "var(--gray-950)",
+        background: "#e3eaef",
+        foreground: "#171717;",
+        'blue-900': "#17192D",
+        'blue-500': "#023B78",
+        'blue-200': "#2188FF",
+        'gray-950': "#24292F",
       },
       gridTemplateColumns: {
         'asset-panel': 'repeat(2, 336px)'
