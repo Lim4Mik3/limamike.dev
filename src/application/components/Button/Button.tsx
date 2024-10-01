@@ -30,7 +30,7 @@ export function Button({
         "bg-blue-200": isActive && variant === 'primary',
         "px-[0.875rem] py-2 text-sm text-[#77818C] bg-white border border-[#D8DFE6]": variant === 'secondary',
         "bg-blue-200 text-white color-white": isActive && variant === 'secondary',
-      })}
+      }, className)}
       {...props}
     >
       <img 

@@ -73,3 +73,5 @@ export const Node = React.memo(({
     </div>
   );
 });
+
+Node.displayName = 'Node'

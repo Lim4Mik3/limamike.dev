@@ -10,7 +10,7 @@ export class TreeNode {
     public type: TreeNodeType,
     public status?: NodeStatus,
     public sensorType?: string,
-    public payload?: any
+    public payload?: unknown
   ) { }
 
   addChild(node: TreeNode) {
