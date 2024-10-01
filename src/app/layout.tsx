@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Client } from "./client";
 
 export const metadata: Metadata = {
   title: "Tractian - Challenge",
@@ -14,7 +15,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        {children}
+        <Client>
+          {children}
+        </Client>
       </body>
     </html>
   );
