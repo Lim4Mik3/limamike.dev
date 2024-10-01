@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Projeto - Visualização de Ativos em Árvore (TRACTIAN Challenge)
 
-## Getting Started
+## Go live AT: https://limamike.dev
 
-First, run the development server:
+## Introdução
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Este projeto é uma aplicação para visualizar a hierarquia de ativos de uma empresa em formato de árvore. Ele permite que o usuário veja locais, ativos e componentes organizados de forma clara e estruturada. Cada ativo pode conter sub-ativos e componentes, e a visualização facilita a gestão e manutenção desses ativos.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tecnologias Utilizadas
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **React** para construção da interface.
+- **React Query** para buscar dados da API e gerenciar o cache.
+- **Zustand** para gerenciamento de estado global.
+- **TypeScript** para segurança de tipos no código.
+- **Programação Orientada a Objetos (POO)**: Escolhida pela facilidade de manipular a lógica dos ativos de forma organizada, considerando a complexidade do projeto.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Funcionalidades
 
-## Learn More
+- **Árvore de Ativos**: Exibe a hierarquia completa dos ativos, sub-ativos, locais e componentes.
+- **Filtros**:
+  - **Busca por nome**: Filtra os itens pelo nome do ativo, componente ou local.
+  - **Sensores de energia**: Filtra componentes que possuem sensores do tipo energia.
+  - **Status crítico**: Filtra os ativos que estão com status de alerta.
 
-To learn more about Next.js, take a look at the following resources:
+## Melhorias Futuras
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Embora o projeto já tenha as principais funcionalidades, existem alguns pontos que podem ser melhorados no futuro:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. **Debounce no Input de Busca**: Colocar um atraso de 350ms para evitar que a busca seja executada a cada tecla pressionada, o que melhora a performance e evita sobrecarga.
 
-## Deploy on Vercel
+2. **Responsividade Mobile**: Adaptar melhor a interface para dispositivos móveis, já que atualmente ela está mais otimizada para telas maiores. Com isso, a experiência em smartphones seria mais fluida.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. **Melhorias de UX/UI**: Adicionar feedbacks visuais, como indicadores de carregamento ao aplicar filtros ou enquanto os dados estão sendo carregados da API, além de otimizar a navegação na árvore, possibilitando expandir ou colapsar todos os itens de uma vez.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4. **Tratamento de Erros**: Implementar mensagens de erro mais detalhadas, como "Nenhum ativo encontrado com esses filtros" ou "Erro ao carregar dados", para melhorar a comunicação com o usuário quando algo não funcionar corretamente.
+
+5. **Carregamento sob Demanda (Lazy Loading)**: Em árvores muito grandes, poderia ser interessante carregar os nós da árvore conforme o usuário vai expandindo os itens, para evitar longos tempos de carregamento iniciais.
+
+6. **Acessibilidade**: Melhorar o suporte para navegação por teclado e leitores de tela, garantindo que o projeto siga boas práticas de acessibilidade.
+
+7. **Cobertura de testes**: Cobrir a basecode com teste unitarios e de regressao visual para garantir a fidelidade na entrega de novas funcionalidade;
