@@ -2,6 +2,10 @@
 
 ## Go live AT: https://limamike.dev
 
+## Demonstracao
+
+[Assista o vídeo](/demo.webm)
+
 ## Introdução
 
 Este projeto é uma aplicação para visualizar a hierarquia de ativos de uma empresa em formato de árvore. Ele permite que o usuário veja locais, ativos e componentes organizados de forma clara e estruturada. Cada ativo pode conter sub-ativos e componentes, e a visualização facilita a gestão e manutenção desses ativos.
