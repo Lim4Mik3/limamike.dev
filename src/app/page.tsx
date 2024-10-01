@@ -4,6 +4,8 @@ import { Header } from "@/application/components/Header/Header";
 import { PanelHeader } from "@/application/components/PanelHeader";
 import { Fragment } from "react";
 
+import "./globals.css";
+
 export default function Home() {
   return (
     <Fragment>
